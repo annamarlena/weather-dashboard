@@ -4,24 +4,88 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  
+  <link href="
+  https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css
+  " rel="stylesheet">
+
+  <link href = "assets/css/bulma-rtl.css" rel = "stylesheet"/>
+  <link href = "assets/css/bulma-rtl.css.map" rel = "stylesheet"/>
+  <link href = "assets/css/bulma-rtl.min.css" rel = "stylesheet"/>
+  <link href = "assets/css/bulma.css" rel = "stylesheet"/>
+  <link href = "assets/css/bulma.css.map" rel = "stylesheet"/>
+  <link href = "assets/css/bulma.min.css" rel = "stylesheet"/>
+
   <title>Weather Dashboard</title>
 </head>
 <body>
-  <header>
-    <h1>Weather Dashboard</h1>
-  </header>
+  <section class="hero is-link">
+    <div class="hero-body">
+      <p class="title">
+        Weather Dashboard
+      </p>
+    </div>
+  </section>
 
-  <div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, corrupti nostrum numquam fugiat quas dicta deserunt pariatur, doloribus error illum sapiente in! Sit nisi illo aut voluptatum quidem ea recusandae laborum accusantium, autem nesciunt voluptatem dicta nemo dignissimos blanditiis odio hic nihil, harum eligendi possimus dolorum rerum! Cupiditate, eligendi? Debitis consectetur quibusdam, odit sequi doloribus iusto? Commodi illum eum optio magni omnis quis maxime totam laudantium odit illo, voluptatibus eaque excepturi a quae ex reiciendis eos dicta aperiam. Culpa sunt, vitae ex minima, temporibus necessitatibus ut maxime, natus qui quis consequatur deserunt aliquam! Dolorum reiciendis asperiores autem commodi pariatur nobis?</p>
-  </div>
+  <section class="section">
+    <div class="tile is-ancestor notification is-black">
+      <div class="tile is-vertical is-3">
+        <div class="tile">
+          <div class="tile is-parent is-vertical">
+            <div class="field is-child notification is-light">
+              <div class="control">
+                <h1 class="title">Search for a City</h1>
+                <input class="input" type="text" placeholder="Enter City Name">
+                <div class="control">
+                  <button class="button is-success is-light is-outlined is-fullwidth" class='btn saveBtn' aria-label='save'>
+                    <i class='fas fa-save' aria-hidden='true'>Search</i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="field is-child notification is-light">
+              <div class="control" id="saved-searches">
+                <h2 class="subtitle">Saved Searches</h2>
+                <div class="buttons">
+                  <button class="button is-link is-light is-outlined is-fullwidth" class='btn saveBtn' aria-label='save'>
+                    <i class='fas fa-save' aria-hidden='true'></i>
+                  </button>
+                  <button class="button is-link is-light is-outlined is-fullwidth" class='btn saveBtn' aria-label='save'>
+                    <i class='fas fa-save' aria-hidden='true'></i>
+                  </button>
+                  <button class="button is-link is-light is-outlined is-fullwidth" class='btn saveBtn' aria-label='save'>
+                    <i class='fas fa-save' aria-hidden='true'></i>
+                  </button>
+                  <button class="button is-link is-light is-outlined is-fullwidth" class='btn saveBtn' aria-label='save'>
+                    <i class='fas fa-save' aria-hidden='true'></i>
+                  </button>
+                  <button class="button is-link is-light is-outlined is-fullwidth" class='btn saveBtn' aria-label='save'>
+                    <i class='fas fa-save' aria-hidden='true'></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   
-  <footer>
-    <h4>Copyright annamarlena designs 2023</h4>
-  </footer>
+
+  <!-- <div class ="row">
+    <div class="col-2 col-md-1"></div>
+  </div> -->
+
+  <!-- <div class='row'>
+    <div class='col-2 col-md-1 text-center py-3'></div>
+    <textarea class='col-8 col-md-10 description' rows='3'></textarea>
+  </div> -->
+
+
+  
+ 
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="./assets/js/script.js"></script>
 </body>
