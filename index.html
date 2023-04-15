@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link href="
   https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css
@@ -16,6 +16,7 @@
   <link href = "assets/css/bulma.css.map" rel = "stylesheet"/>
   <link href = "assets/css/bulma.min.css" rel = "stylesheet"/>
 
+  <!-- This page uses Bulma (a new technology I'm learning) in place of standard semantic html. -->
   <title>Weather Dashboard</title>
 </head>
 <body>
@@ -28,23 +29,23 @@
   </section>
 
   <section class="section">
-    <div class="tile is-ancestor notification is-black">
-      <div class="tile is-vertical is-3">
-        <div class="tile">
-          <div class="tile is-parent is-vertical">
-            <div class="field is-child notification is-light">
+    <div class="tile is-ancestor is-12 notification is-light">
+    
+      <!-- Vertical section on the left -->
+      <div class="tile is-parent is-vertical is-3 mr-2 notification is-black">
+        <div class="field is-child notification is-white">
+          <div class="control">
+            <h2 class="title">Search for a City</h2>
+            <input id="city-name" class="input mb-4" type="text" placeholder="Enter City Name">
               <div class="control">
-                <h1 class="title">Search for a City</h1>
-                <input class="input" type="text" placeholder="Enter City Name">
-                <div class="control">
-                  <button class="button is-success is-light is-outlined is-fullwidth" class='btn saveBtn' aria-label='save'>
-                    <i class='fas fa-save' aria-hidden='true'>Search</i>
-                  </button>
-                </div>
-              </div>
-            </div>
-
-            <div class="field is-child notification is-light">
+                <button id="search-btn" class="button is-success is-fullwidth" class='btn saveBtn' aria-label='save'>
+                <i class='fas fa-save' aria-hidden='true'>Search</i>
+                </button>
+          </div>
+        </div>
+      </div>
+            <!-- Bottom box inside the vertical section to the left -->
+            <div class="field is-child notification is-white">
               <div class="control" id="saved-searches">
                 <h2 class="subtitle">Saved Searches</h2>
                 <div class="buttons">
@@ -66,7 +67,20 @@
                 </div>
               </div>
             </div>
+
+          <!-- Large horizontal row  -->
+      <!-- </div>
+          <div class="tile is-9">
+            <div class="is-parent notification is-black">
+              <div class="tile is-child box notification is-light"></div>
+            </div>
           </div>
+        </div> -->
+      </div>
+      </div>
+
+
+              
         </div>
       </div>
     </div>
