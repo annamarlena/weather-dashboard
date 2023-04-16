@@ -13,7 +13,7 @@ function searchCity() {
     return;
 }
 // Send the query
-var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIkey + "&units=imperial";
+var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + APIkey + "&units=imperial";
 
 fetch(queryURL).then( function(response) {
   return response.json()
@@ -22,8 +22,6 @@ fetch(queryURL).then( function(response) {
     var currentWeather = $("#current-weather")
     var tempEL = $("<p>").text("Current temp: " + data.main.temp + "F").addClass("is-link")
     currentWeather.append(tempEL)
-
-
     fiveDay(cityName)
 })
 console.log(queryURL)
@@ -31,7 +29,7 @@ console.log(queryURL)
 
 function fiveDay(cityName) {
   
-  var queryURL = "http://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + APIkey + "&units=imperial";
+  var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + APIkey + "&units=imperial";
 
   fetch(queryURL).then( function(response) {
     return response.json()
