@@ -6,6 +6,8 @@ The objective was to create a weather dashboard with form inputs where a user ca
 
 In addition, I'm learning Bulma as a new techonlogy for a group project and decided to inmplement what I've learned into the styling for this project as well. (Bulma is a free open-source library that works with Flexbox to make application styling simple, efficient, and elegant.)
 
+* Note: right now I have the data pulling for the 5-day forecast (visible in the console log) but I don't yet have it writing to the browser. Still working on that part but I'll get there! 
+
 ## What I Learned
 
 Mainly what I learned here is to balance priorities so I don't miss a deadline. I'll get this project done but not in time expected timeframe, mainly due to being overly focused on a different project. 
