@@ -8,10 +8,11 @@ In addition, I'm learning Bulma as a new techonlogy for a group project and deci
 
 ## What I Learned
 
-Mainly what I learned here is to balance priorities so I don't miss a deadline. I'll get this project done but not in time expected timeframe, mainly due to being overly focused on a different project.
+Mainly what I learned here is to balance priorities so I don't miss a deadline. I'll get this project done but not in time expected timeframe, mainly due to being overly focused on a different project. 
 
 ## Link to Published Repo
 
+Open [https://annamarlena.github.io/weather-dashboard/](https://annamarlena.github.io/weather-dashboard/) with your browser to see the result.
 
 ## Screenshot
 
