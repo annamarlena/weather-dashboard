@@ -18,10 +18,11 @@ var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName +
 fetch(queryURL).then( function(response) {
   return response.json()
 }).then( function(data) {
-    console.log(data)
     var currentWeather = $("#current-weather")
-    var tempEL = $("<p>").text("Current temp: " + data.main.temp + "F").addClass("is-link")
-    currentWeather.append(tempEL)
+    var cityEl = $("<p>").text("City: " + data.name)
+    var dateEl = $("<p>").text("Date: " + data.dt_txt)
+    var tempEL = $("<p>").text("Current temp: " + data.main.temp + "F")
+    currentWeather.append(cityEl, dateEl, tempEL)
     fiveDay(cityName)
 })
 console.log(queryURL)
