@@ -20,7 +20,7 @@ fetch(queryURL).then( function(response) {
 }).then( function(data) {
     var currentWeather = $("#current-weather")
     var cityEl = $("<p>").text("City: " + data.name)
-    var dateEl = $("<p>").text("Date: " + data.dt_txt)
+    var dateEl = $("<p>").text("Date: " + Date())
     var tempEL = $("<p>").text("Current temp: " + data.main.temp + "F") 
     var humidityEl = $("<p>").text("Humidity: " + data.main.humidity + "%")
     var windSpdEl = $("<p>").text("Windspeed: " + data.wind.speed + " mph")
@@ -54,7 +54,7 @@ function fiveDay(cityName) {
       }
       
       // We now have a new array with one record for each day!
-      console.log(newForecastArr)
+      console.log("newForecastArr: " + newForecastArr)
     })
   }
 
